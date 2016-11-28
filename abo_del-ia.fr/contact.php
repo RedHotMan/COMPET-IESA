@@ -3,8 +3,7 @@
 <html>
 
     <head>
-        <title>Alexandre Ben Othman - Intégrateur / Webdesigner  - Portfolio</title>
-        <?php include("includes/head.php"); ?>
+        <title>Delia</title>
     </head>
 
 

@@ -24,7 +24,7 @@
             <div>
                 <img src="media/logo.png" class="fade">
                 <h1 class="effect">DELIA</h1>
-                <p class="effect">L'intelligence artificielle qui vous facilite la vie</p><br>
+
                 <a class="cta fade"><span>Explorer</span></a></div>
             </div>
         </section>

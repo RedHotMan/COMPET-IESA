@@ -5,12 +5,20 @@ $(window).load(function(){
     })
 })
 
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+            $('.fadein :first-child').fadeOut()
+                .next('img').fadeIn()
+                .end().appendTo('.fadein');},
+        3000);
+});
+
 $(document).ready(function(){
 
-    $('.cta').click(function(){
+    $('.cta-intro').click(function(){
         $('html, body').animate({
-            scrollTop: $("#anchor").offset().top
-        }, 1000);
+            scrollTop: $("#anchor").offset().top}, 1000);
     });
 
     $('#question1').click(function(){
@@ -22,4 +30,8 @@ $(document).ready(function(){
     });
 
 });
+
+
+
+
 

@@ -5,6 +5,7 @@ $(window).load(function(){
     })
 })
 
+/**** Caroussel ****/
 $(function(){
     $('.fadein img:gt(0)').hide();
     setInterval(function(){
@@ -13,16 +14,13 @@ $(function(){
                 .end().appendTo('.fadein');},
         3000);
 });
+/**/
 
 $(document).ready(function(){
 
     $('.cta-intro').click(function(){
         $('html, body').animate({
             scrollTop: $("#anchor").offset().top}, 1000);
-    });
-
-    $('#question1').click(function(){
-        $(this).addClass('hvr-push');
     });
 
     $('.first').bind('mousewheel', function(e){

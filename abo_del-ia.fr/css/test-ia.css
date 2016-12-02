@@ -1,0 +1,54 @@
+/******    TEST-IA   ******/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*::selection { background: #f08934; color: #fff; }
+* { margin:0; padding:0; outline:none; list-style:none; text-decoration:none; box-sizing:border-box; background: transparent; border:none; }
+html { font-size: 10px; }
+body { background: #FFF; font-family: "raleway", sans-serif }
+.center { width: 80%; max-width: 1400px; margin: auto }
+h1 { font-family: 'raleway', sans-serif; font-size: 4rem; }
+p {	margin: 10px 0 0 0;	font-size: 1.6rem; line-height: 1.4; }
+
+main { width: 100%; height: 100vh; position: relative;}
+main .fadein { position: absolute; width: 100%; height: 100vh; }
+main .fadein img { position: absolute; width: 100%; height: 100vh; }
+main #pres { position: absolute; transform: translate(-50%, -50%); left: 50%; right: -50%; top: 50%; max-width: 660px; width: 95%; }
+main #pres img { display: block; margin: 3.5rem auto; width: 20rem; }
+main h1, main p { color: #fff; text-align: center; }
+main h1 { margin: 1rem auto 1.4rem; width: 185px; }
+main p { margin: 2rem 0 1rem; font-size: 2rem; }
+
+.cta { font-size: 1.8rem; text-transform: uppercase; display: block; width:16rem; border: 3px solid #fff; text-align: center; margin: auto; padding: 1rem; cursor: pointer; background: transparent;; text-decoration: none; color: #fff; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+.cta:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #f08934; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+.cta:hover { color: white; }
+.cta:hover:before { -webkit-transform: scaleX(1); transform: scaleX(1); }
+
+.fade { opacity: 0 !important; transform: translateY(20px); transition: 0.6s all ease-out; }
+.fade.active { transform: translateY(0); opacity: 1!important;}
+
+#test-ia { background: url(../media/bg/4.jpg) center no-repeat; background-size: cover; overflow: hidden; }
+#test-ia main div h1 { width: 95%; max-width: 364px; }
+
+@keyframes bye { 0%{ opacity: 1; } 20%{ opacity: 0; } 100%{ opacity: 0;}}
+.hello { transform: translateX(100%); opacity: 0}
+.present { transform: translateX(-50%); }
+.bye-bye { transform: translateX(-200%); animation: bye 7s; }
+
+#test-ia main { transition: 5s }
+#test-ia section { width: 100%; position: absolute; height: 100%; left: 50%; right: 50%; top: 0; transition: 3s;}
+#test-ia #quests label { color: #fff; font-size: 22px; width: 100%; display: block; }
+#test-ia #quests input[type="text"], #test-ia #quests select { background: #fff; width: 90%; padding: 17px 29px; margin: 14px 0 27px; font-size: 20px; text-align: center; transition: 0.5s;}
+#test-ia #quests input[type="text"][disabled="disabled"] {  transition: 0.5s; background: #bbb; color: #444; }
+#test-ia .content { position: absolute; transform: translateY(-50%); top: 50%; width: 100%; }
+#test-ia div.quest { margin: 70px 30px; position: relative; transition: 2s;}
+#test-ia #quests input[type="button"] { width: 10%; height: 58px; background: #de8c18; position: absolute; top: 30%; right: 0; font-size: 28px; color: #fff; cursor: pointer; transition: 0.15s;}
+#test-ia #quests input[type="button"]:hover { background: #a26513; }
+#test-ia #quests input[type="button"].hold { background: #7b5015; }
+
+@keyframes load { 0% { transform:rotate(0deg); } 100% { transform:rotate(360deg); } }
+/*  .loader { display:block; border:5px solid rgba(250,95,7,0.3); width:50px; height: 50px; border-radius:100%; }
+  .loader:after { content: ""; position:absolute; top: -5px; bottom: -5px; left:-5px; width:50px; height:50px; border:5px solid transparent; border-radius:50px; border-top-color: #fa5f07; animation: 1s load linear infinite; }
+    */
+#loader { background: rgba(0,0,0,0.8); display:none; width: 100%;height: 100%; position: absolute; top: 50%; right: 50%; left: 50%; transform: translate(-50%,-50%); }
+#loader:after { content: ""; position: absolute; width: 100px; height: 100px; border: 10px solid transparent; border-radius: 100%; border-top-color: #fa5f07; border-right-color: #fa5f07; border-bottom-color: #fa5f07; animation: 1s load linear infinite; transform: translate(-50%,-50%); box-sizing: border-box; }
+

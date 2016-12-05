@@ -33,48 +33,71 @@ $(document).ready(function(){
         return false;
     });
 
-    /*** Test ***/
+    
+    /****************************************/
+    /***************** Test *****************/
+    /****************************************/
+
+    $('#test-ia a span, #test-ia #quests input[type="button"]').click(function () {
+        $('#test-ia audio#click')[0].play();
+    });
 
     $('#test-begin').click(function(){
-        $('#test-ia').css('background','url(media/bg/1.jpg) center no-repeat').css('background-size','cover');
+        $('#test-ia').css('background','url(media/bg/2.jpg) center no-repeat').css('background-size','cover');
         $('#test-ia main').addClass('bye-bye');
         $('#test-ia #quests').removeClass('hello').addClass('present');
+        $('#loader').fadeIn(500).delay(1000).fadeOut(500);
     });
 
-    $('#but-rech').click(function(){
-        $('#test-ia').css('background','url(media/bg/2.jpg) center no-repeat').css('background-size','cover');
-        $('#quest2').removeClass('hello');
-        $('#select-rech').attr('disabled','disabled');
-        $(this).addClass('hold');
+    $( "select" ).change(function() {
+        $("#slct-1 option[value='1']:selected").each(function () {
+            $('.but-rep1').click(function(){
+                $('#q-1-2, #q-1').removeClass('hello');
+                $('#q-2, #q-3').remove();
+                $("#slct-1").attr('disabled','disabled');
+                $('#loader').fadeIn(500).delay(500).fadeOut(500);
+            });
+        });
+        $("#slct-1 option[value='2']:selected").each(function () {
+            $('.but-rep1').click(function(){
+                $('#q-2-2,#q-2').removeClass('hello');
+                $('#q-1, #q-3').remove();
+                $("#slct-1").attr('disabled','disabled');
+                $('#loader').fadeIn(500).delay(500).fadeOut(500);
+            });
+        });
+        $("#slct-1 option[value='3']:selected").each(function () {
+            $('.but-rep1').click(function(){
+                $('#q-3-2, #q-3').removeClass('hello');
+                $('#q-1, #q-2').remove();
+                $("#slct-1").attr('disabled','disabled');
+                $('#loader').fadeIn(500).delay(500).fadeOut(500);
+            });
+        });
     });
 
-    $('#but-lieu').click(function(){
-        $('#test-ia').css('background','url(media/bg/3.jpg) center no-repeat').css('background-size','cover');
-        $('#quest3').removeClass('hello');
-        $('#text-lieu').attr('disabled','disabled');
-        $(this).addClass('hold');
+    $('#attention').click(function() {
+        $('#attention').fadeOut(500);
     });
 
-    $('#but-time').click(function(){
-        $('#test-ia').css('background','url(media/bg/4.jpg) center no-repeat').css('background-size','cover');
-        $('#loader').fadeIn(500).delay(2000).fadeOut(500);
-        $('#test-ia #quests').delay(3000).addClass('bye-bye');
-        $('#test-ia #rep').removeClass('hello').addClass('present');
-        $('#test-ia #rep .p1').delay(4000).fadeIn(500).delay(2000).fadeOut();
-        $('#test-ia #rep .p2').delay(7000).fadeIn(500).delay(3000).fadeOut();
+
+    $('.but-rep2').click(function() {
+        if ($('.q-2 select').val() == 'null') {
+            $('#attention').fadeIn(500);
+        } else {
+            $('.q-3').removeClass('hello');
+            $('#loader').fadeIn(500).delay(500).fadeOut(500);
+        }
+    });
+
+    $('.but-rep3').click(function() {
+        if ($('.q-3 select').val() == 'null' || $('.q-3 input').val() == '' )  {
+            $('#attention').fadeIn(500);
+        } else {
+            $('#test-ia .quest, #test-ia .intro-qn ').fadeOut(1000);
+            $('#loader').fadeIn(500).delay(5000).fadeOut(500);
+            $('.reps').delay(5000).fadeIn(500);
+        }
     });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-

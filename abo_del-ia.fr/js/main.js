@@ -4,8 +4,14 @@ $(window).load(function(){
     $('.fade').addClass('active');
     $('.effect').each(function(){
         $(this).addClass('active');
-    })
-    $('#test-ia main #hi')[0].play();
+    });
+
+    if (window.matchMedia("(min-width: 960px)").matches) {
+        $('#test-ia main #hi')[0].play();
+    } else {
+        $('#test-ia main #hi').remove();
+    }
+
     $('#loader').fadeOut(500);
 });
 
@@ -41,9 +47,15 @@ $(document).ready(function(){
     /***************** Test *****************/
     /****************************************/
 
-    $('#test-ia a span, #test-ia #quests input[type="button"]').click(function () {
-        $('audio#click')[0].play();
-    });
+
+    if (window.matchMedia("(min-width: 960px)").matches) {
+        $('#test-ia a span, #test-ia #quests input[type="button"]').click(function () {
+            $('audio#click')[0].play();
+        });
+
+    } else {
+        $('audio#click').remove();
+    }
 
     $('#test-begin').click(function(){
         $('#test-ia').css('background','url(media/bg/test-ia/2.jpg) center no-repeat').css('background-size','cover');

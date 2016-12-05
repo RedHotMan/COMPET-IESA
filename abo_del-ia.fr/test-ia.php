@@ -16,12 +16,20 @@
     
     <body id="test-ia">
 
+        <span id="loader"></span>
+        <span id="attention"></span>
+        <span id="warn"></span>
+        <span id="modal-video"><iframe src="https://www.youtube.com/embed/ch7gquxwohA" frameborder="0" allowfullscreen></iframe></span>
+
         <main class="first">
-            <audio autoplay>
+            <audio id="hi">
                 <source src="media/mp3/test.mp3" type="audio/mpeg">
             </audio>
+            <audio id="click">
+                <source src="media/mp3/click.mp3" type="audio/mpeg">
+            </audio>
             <div id="pres">
-                <img src="media/logos/logo2.png" class="fade">
+                <img src="media/logos/logo.png" class="fade">
                 <h1 class="fade">TESTEZ DELIA</h1>
                 <p class="fade">Un aperçu des fonctionnalités</p><br>
                 <a class="cta intro fade" id="test-begin"><span>Commencer</span></a>
@@ -30,36 +38,120 @@
     
         <section id="quests" class="center hello">
             <div class="content">
-                <div id="quest1" class="quest">
+                <div class="q-in quest">
                     <label>Que recherchez-vous ?</label>
-                    <select id="select-rech">
-                        <option value="null">Choisissez votre activité</option>
-                        <option value="volvo">1</option>
-                        <option value="saab">2</option>
-                        <option value="opel">3</option>
+                    <select name="first" id="slct-1">
+                        <option value="null" selected></option>
+                        <option value="1">Une activité domestique</option>
+                        <option value="2">Une idée de sortie</option>
+                        <option value="3">Un cadeau à offrir</option>
                     </select>
-                    <input type='button' name="valid-rech" id="but-rech" value="OK">
+                    <input type='button' name="rep-1" class="but-rep1" value="OK">
                 </div>
-                <div id="quest2" class="quest hello">
-                    <label>Où ?</label>
-                    <input type="text" name="lieu" id="text-lieu" placeholder="Ex : Sur Internet / A Paris / "/>
-                    <input type='button' name="valid-lieu" id="but-lieu" value="OK">
+
+                <div id="q-1" class="hello qn">
+                    <p class="intro-qn">Pour votre occupation :</p>
+                    <div id="q-1-2" class="q-2 quest hello">
+                        <label>Que voulez-vous faire ?</label>
+                        <select name="occupation">
+                            <option value="null" selected></option>
+                            <option value="1">Regarder une série/un film</option>
+                            <option value="2">S'instruire/Tutoriels</option>
+                            <option value="3">Joueur à un jeu</option>
+                            <option value="4">Se détendre</option>
+                            <option value="5">Se défouler (coaching sport)</option>
+                        </select>
+                        <input type='button' name="rep-2" class="but-rep2" value="OK">
+                    </div>
+                    <div id="q-1-3" class="q-3 quest hello">
+                        <label>Nombre de participants ?</label>
+                        <select name="number">
+                            <option value="null" selected></option>
+                            <option value="1">Seul</option>
+                            <option value="2">A plusieurs</option>
+                        </select>
+                        <input type='button' name="rep-3" class="but-rep3" value="OK">
+                    </div>
+                    <div class=" reps">
+                        <p>Voici ce que je peux vous proposer :</p>
+                        <ul class="props">
+                            <li>Réponse 1</li>
+                            <li>Réponse 2</li>
+                            <li>Réponse 3</li>
+                            <li>Réponse 4</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="quest3" class="quest hello">
-                    <label>Pour quand ?</label>
-                    <input type="text" name="heure" id="text-time" placeholder="Ex : Demain / A 18h / Tout de suite"/>
-                    <input type='button' name="valid-time" id="but-time" value="OK">
+
+                <div id="q-2" class="hello qn">
+                    <p class="intro-qn">Pour votre sortie :</p>
+                    <div id="q-2-2" class="q-2 quest hello">
+                        <label>Que désirez-vous faire ?</label>
+                        <select name="activity">
+                            <option value="null" selected></option>
+                            <option value="1">Un restaurant / un bistrot / un bar</option>
+                            <option value="2">Un Cinéma / théâtre</option>
+                            <option value="3">Visiter / Découvrir un lieu</option>
+                            <option value="4">Pratiquer une activité sportive</option>
+                        </select>
+                        <input type='button' name="rep-2" class="but-rep2" value="OK">
+                    </div>
+                    <div id="q-2-3" class="q-3 quest hello">
+                        <label>Où ?</label>
+                        <input type="text" name="location" id="text-loation" placeholder="Ex : Paris, Strasbourg, Perpignan...  "/>
+                        <input type='button' name="rep-3" class="but-rep3" value="OK">
+                    </div>
+                    <div class=" reps">
+                        <p>Voici ce que je peux vous proposer :</p>
+                        <ul class="props">
+                            <li>Réponse 1</li>
+                            <li>Réponse 2</li>
+                            <li>Réponse 3</li>
+                            <li>Réponse 4</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="q-3" class="hello qn">
+                    <p class="intro-qn">Pour votre cadeau :</p>
+                    <div id="q-3-2" class="q-2 quest hello">
+                        <label>Pour quelle occasion ?</label>
+                        <select name="event">
+                            <option value="null" selected></option>
+                            <option value="1">Un anniversaire</option>
+                            <option value="2">Un mariage</option>
+                            <option value="3">Une naissance</option>
+                            <option value="4">La Saint-Valentin</option>
+                            <option value="5">Autres occasions</option>
+                        </select>
+                        <input type='button' name="rep-2" class="but-rep2" value="OK">
+                    </div>
+                    <div id="q-3-3" class="q-3 quest hello">
+                        <label>Pour :</label>
+                        <select  name="destination">
+                            <option value="null" selected></option>
+                            <option value="1">Un homme / un garçon</option>
+                            <option value="2">Une femme / une fille</option>
+                            <option value="3">Couple</option>
+                        </select>
+                        <input type='button' name="rep-3" class="but-rep3" value="OK">
+                    </div>
+                    <div class=" reps">
+                        <p>Voici ce que je peux vous proposer :</p>
+                        <ul class="props">
+                            <li>Réponse 1</li>
+                            <li>Réponse 2</li>
+                            <li>Réponse 3</li>
+                            <li>Réponse 4</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <span id="loader" ></span>
-
         <section id="rep" class="center hello">
-            <p class="p1">Alors ça t'a plu batard ?</p>
-            <p class="p2">T' as cru vraiment qu'on allait développer une IA pour toi ?</p>
-        </section>
 
+        </section>
 
     </body>
 

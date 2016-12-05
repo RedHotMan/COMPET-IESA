@@ -17,7 +17,6 @@
     <body id="test-ia">
 
         <span id="loader"></span>
-        <span id="attention"></span>
         <span id="warn"></span>
         <span id="modal-video"><iframe src="https://www.youtube.com/embed/ch7gquxwohA" frameborder="0" allowfullscreen></iframe></span>
 
@@ -74,11 +73,30 @@
                     </div>
                     <div class=" reps">
                         <p>Voici ce que je peux vous proposer :</p>
-                        <ul class="props">
-                            <li>Réponse 1</li>
-                            <li>Réponse 2</li>
-                            <li>Réponse 3</li>
-                            <li>Réponse 4</li>
+                        <ul class="props props-1">
+                            <li>Réponse 1-1</li>
+                            <li>Réponse 1-2</li>
+                            <li>Réponse 1-3</li>
+                        </ul>
+                        <ul class="props props-2">
+                            <li>Réponse 1-1</li>
+                            <li>Réponse 1-2</li>
+                            <li>Réponse 1-3</li>
+                        </ul>
+                        <ul class="props props-3">
+                            <li>Réponse 1-1</li>
+                            <li>Réponse 1-2</li>
+                            <li>Réponse 1-3</li>
+                        </ul>
+                        <ul class="props props-4">
+                            <li>Réponse 1-1</li>
+                            <li>Réponse 1-2</li>
+                            <li>Réponse 1-3</li>
+                        </ul>
+                        <ul class="props props-5">
+                            <li>Réponse 1-1</li>
+                            <li>Réponse 1-2</li>
+                            <li>Réponse 1-3</li>
                         </ul>
                     </div>
                 </div>
@@ -103,11 +121,25 @@
                     </div>
                     <div class=" reps">
                         <p>Voici ce que je peux vous proposer :</p>
-                        <ul class="props">
-                            <li>Réponse 1</li>
-                            <li>Réponse 2</li>
-                            <li>Réponse 3</li>
-                            <li>Réponse 4</li>
+                        <ul class="props props-1">
+                            <li>Réponse 2-1</li>
+                            <li>Réponse 2-2</li>
+                            <li>Réponse 2-3</li>
+                        </ul>
+                        <ul class="props props-2">
+                            <li>Réponse 2-1</li>
+                            <li>Réponse 2-2</li>
+                            <li>Réponse 2-3</li>
+                        </ul>
+                        <ul class="props props-3">
+                            <li>Réponse 2-1</li>
+                            <li>Réponse 2-2</li>
+                            <li>Réponse 2-3</li>
+                        </ul>
+                        <ul class="props props-4">
+                            <li>Réponse 2-1</li>
+                            <li>Réponse 2-2</li>
+                            <li>Réponse 2-3</li>
                         </ul>
                     </div>
                 </div>
@@ -138,19 +170,40 @@
                     </div>
                     <div class=" reps">
                         <p>Voici ce que je peux vous proposer :</p>
-                        <ul class="props">
-                            <li>Réponse 1</li>
-                            <li>Réponse 2</li>
-                            <li>Réponse 3</li>
-                            <li>Réponse 4</li>
+                        <ul class="props props-1">
+                            <li>Réponse 3-1</li>
+                            <li>Réponse 3-1</li>
+                            <li>Réponse 3-1</li>
+                        </ul>
+                        <ul class="props props-2">
+                            <li>Réponse 3-2</li>
+                            <li>Réponse 3-2</li>
+                            <li>Réponse 3-2</li>
+                        </ul>
+                        <ul class="props props-3">
+                            <li>Réponse 3-3</li>
+                            <li>Réponse 3-3</li>
+                            <li>Réponse 3-3</li>
+                        </ul>
+                        <ul class="props props-4">
+                            <li>Réponse 3-4</li>
+                            <li>Réponse 3-4</li>
+                            <li>Réponse 3-4</li>
+                        </ul>
+                        <ul class="props props-5">
+                            <li>Réponse 3-5</li>
+                            <li>Réponse 3-5</li>
+                            <li>Réponse 3-5</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="rep" class="center hello">
-
+        <section id="message" class="center hello">
+            <p class="p1">Un instant...</p>
+            <p class="p2">Avez-vous vu les différents problèmes de notre IA ?</p>
+            <p class="p3">C'est bien normal...<br> <span>DELIA est en train de dégénérer.</span></p>
         </section>
 
     </body>

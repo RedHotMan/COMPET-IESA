@@ -4,7 +4,7 @@
 
 /*****     GENERIQUES     *****/
 
-    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&subset=latin-ext');
+    @import url('font.css');
     *::selection { background: #f08934; color: #fff; }
     * { margin:0; padding:0; outline:none; list-style:none; text-decoration:none; box-sizing:border-box; background: transparent; border:none; }
     html { font-size: 10px; overflow: hidden}
@@ -23,6 +23,10 @@
     #loader:before { content: ""; position: absolute; top: 50%; left: 50%; right: 50%; width: 100px; height: 100px; border: 10px solid transparent; border-radius: 100%; border-top-color: #4e8fcc; border-right-color: #4e8fcc; border-bottom-color: #4e8fcc; animation: 1s load linear infinite; box-sizing: border-box; }
     #loader:after { content: "Veuillez patienter..."; position: absolute; top: 50%; left: 50%; right: 50%; width: 200px; height: 22px; color: #fff; font-size: 22px; text-shadow: 0 0 7px #000; text-align: center; transform: translate(-50%,-50%); }
 
+    #test-ia { background: url(../media/bg/test-ia/1.jpg) center no-repeat; background-size: cover; overflow: hidden; transition: 1s }
+    #test-ia .content { position: absolute; transform: translateY(-50%); top: 50%; width: 100%; height: 90%;}
+
+
 #test-ia main { transition: 5s }
     #test-ia section { position: absolute; height: 100%; left: 50%; right: 50%; top: 0; transition: 2s;}
 
@@ -36,6 +40,11 @@
 
 @media (max-width: 480px) {
     #test-ia section { width: 90%; }
+}
+
+@media (max-height: 400px) {
+    #warn { position: fixed; width: 100%; height: 100%; background: #4845ee; top: 0; z-index: 100;}
+    #warn:before { content: 'Veuillez utilser votre appareil à la verticale.'; position: absolute; color: #fff; font-size: 30px; top: 50%; right: 50%; left:50%; width: 100%; text-align:center; transform: translate(-50%,-50%); }
 }
 
 /*****     MAIN     *****/
@@ -57,35 +66,36 @@
     .fade { opacity: 0 !important; transform: translateY(20px); transition: 0.6s all ease-out; }
     .fade.active { transform: translateY(0); opacity: 1!important;}
 
-    #test-ia { background: url(../media/bg/test-ia/1.jpg) center no-repeat; background-size: cover; overflow: hidden; transition: 0.5s;; }
     #test-ia main div h1 { width: 95%; max-width: 364px; }
-    #test-ia .content { position: absolute; transform: translateY(-50%); top: 50%; width: 100%; height: 90%;}
 
 
 /*****     QUESTS     *****/
 
     #quests label, .reps p { color: #fff; font-size: 22px; width: 100%; display: block; text-shadow: 0 0 10px #000; }
-    #quests select { background: #fff url(../media/logos/ar-slct.png) no-repeat; transition: 0.5s; background-position: 12px 48%; background-size: 15px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; overflow-y: scroll; }
+    #quests select { background: #fff url(../media/logos/ar-slct.png) no-repeat; transition: 2s; background-position: 12px 48%; background-size: 15px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; overflow-y: scroll; }
 
-    #quests input[type="text"]{ background: #fff; transition: 0.5s;}
+    #quests input[type="text"]{ background: #fff; transition: 2s;}
     .q-2, .q-3  { margin: 3vh 0 !important; }
     #quests option[value="null"]{ display: none; }
     #quests input[type="text"], #test-ia #quests select { padding: 17px 43px; margin: 14px 0 27px; box-shadow: 0 3px 10px #000; width: 100%; }
-    #quests input[type="text"][disabled="disabled"], #quests select[disabled="disabled"]{ transition: 0.5s;  background: #bbb url(../media/logos/ar-slct.png) no-repeat; background-position: 12px 48%; background-size: 15px; color: #444; }
-    #quests div.quest { margin-top: 14vh; position: relative; transition: 0.5s;}
+    #quests input[type="text"][disabled="disabled"], #quests select[disabled="disabled"]{ transition: 2s;  background: #bbb url(../media/logos/ar-slct.png) no-repeat; background-position: 12px 48%; background-size: 15px; color: #444; }
+    #quests div.quest { margin-top: 8vh; position: relative; transition: 2s;}
     #quests input[type="button"] { width: 10%; height: 58px; background: #de8c18; position: absolute; right: 0; font-size: 28px; color: #fff; cursor: pointer; transition: 0.15s;}
     #quests input[type="button"]:hover { background: #a26513; }
     #quests input[type="button"].hold { background: #7b5015; }
-    .qn { position: absolute; width: 100%; top: 31%; transition: 0.5s; }
-    .qn .intro-qn { transition: 0.5s; color: #8c8c8c; margin: 9vh 0 3vh; }
+    .qn { position: absolute; width: 100%; top: 31%; transition: 2s; }
+    .qn .intro-qn { transition: 2s; margin: 9vh 0 3vh; color: #b9c8fd; text-shadow: 0 0 10px #000; }
 
     .reps {width: 100%; transform: translateY(-33%); display: none; }
-    .props li { width: 100%; padding: 3vh 4rem; color: white; font-size: 24px; margin: 5vh 0; background: #505050; text-shadow: 0 0 10px #000; cursor: pointer; }
+    .props li { position: relative; overflow: hidden; background-size: cover; width: 100%; padding: 5vh 4rem; color: white; font-size: 24px; margin: 5vh 0; background: #505050; text-shadow: 0 0 10px #000; cursor: pointer; }
+    .props li img { position: absolute; top: 0; left: 50%; filter: brightness(40%); transition: 0.25s; width: 138%; transform: translateX(-50%);}
+    .props li p { position: absolute; top: 50%; transform: translatey(-50%); margin: 0; }
 
 
 @media (min-width: 960px) {
     #quests input[type="text"], #test-ia #quests select { font-size: 20px; }
     #quests input[type="button"] { width: 10%; height: 58px; font-size: 28px; top: 29%;}
+    .props li:hover img { filter: brightness(90%); }
     .qn .intro-qn {font-size: 38px; }
 }
 
@@ -99,11 +109,7 @@
     #quests input[type="text"], #test-ia #quests select { font-size: 16px; }
     #quests input[type="button"] { width: 20%; height: 52px; font-size: 16px;  top: 31%;}
     .qn .intro-qn {font-size: 27px; }
-}
-
-@media (max-height: 470px) {
-    #warn { position: fixed; width: 100%; height: 100%; background: #4845ee; top: 0; display: none; z-index: 100;}
-    #warn:before { content: 'Veuillez utilser votre appareil à la verticale'; position: absolute; color: #fff; font-size: 30px; top: 50%; right: 50%; left:50%; width: 100%; text-align:center; transform: translate(-50%,-50%); }
+    main audio { display: none !important; }
 }
 
 /***   Message   ***/
@@ -113,16 +119,20 @@
     #message .next { display: none; }
 
     #modal-video { z-index: 100; position: fixed; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: none; }
-    #modal-video iframe { position: absolute; top: 50%; left: 50%; right: 50%; transform: translate(-50%, -50%); width: 50%; height: 60%; max-width: 1280px; max-height: 720px; }
+    #modal-video iframe { position: absolute; top: 50%; left: 50%; right: 50%; transform: translate(-50%, -50%); max-width: 1280px; max-height: 720px; }
+    #modal-video span { display: block; right: 20px; top: 20px; width: 35px; height: 35px; position: absolute;  background: url(../media/logos/cross.png) center no-repeat; cursor: pointer; }
 
 @media (min-width: 960px) {
     #message p { font-size: 34px; }
+    #modal-video iframe { width: 74vw; height: 41vw; }
 }
 
 @media (max-width: 960px) and (min-width: 480px) {
     #message p { font-size: 25px; }
+    #modal-video iframe { width: 88vw; height: 50vw; }
 }
 
 @media (max-width: 480px) {
-    #message p { font-size: 16px; }
+    #message p { font-size: 23px; }
+    #modal-video iframe { width: 100vw; height: 56vw; }
 }

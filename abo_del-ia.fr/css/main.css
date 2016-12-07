@@ -357,7 +357,7 @@ main p
     text-transform: uppercase;
     width: 20rem;
     padding: 0.7rem 1rem;
-    margin: 0 0 30px 0;
+    margin: 30px 0 0 0;
     box-shadow: 0 0 10px orange;
     background-color: transparent;
 }

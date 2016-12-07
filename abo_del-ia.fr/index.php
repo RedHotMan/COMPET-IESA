@@ -71,8 +71,10 @@
                     <img src="media/logos/infini.png" >
                     <p>A la différence d’un humain, Delia ne vous laissera jamais tomber. Vous en avez le contrôle absolu de son activation jusqu’à sa mort.</p>
                 </div>
+                
+                <a class="cta_test" href="test-ia.php">Tester Delia !</a>
             </div>
-            <a class="cta_test" href="test-ia.php">Tester Delia !</a>
+
         </section> 
 
     

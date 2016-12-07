@@ -446,6 +446,19 @@ footer
     width: 33px;
 }
 
+@media (max-width : 430px)
+{
+    #reseaux img
+    {
+        width: 25px;
+    }
+    
+    .footer_right span
+    {
+        font-size: 10px;
+    }
+}
+
 
 
 
@@ -577,20 +590,19 @@ textarea
 }
 
 
-@media (max-width=650)
+/*
+@media (max-width:650px)
 {
     #modal-contact
     {
-        width: 100vw;
-        height: 100vh;
-        min-width: 500px;
-        min-height: 5000px;@
+        width: 500px;
+        height: 300px;
     }
     
     #modal-contact input, textarea
     {
         width: 100%;
-        min-width: 100px;
     }
 }
+*/
 

@@ -43,8 +43,6 @@
                     var sujet = $(this).find("input[name=sujet]").val();
                     var message = $(this).find("textarea[name=message]").val();
                     
-                    var dataString = nom + prenom + email + sujet + message; 
-                    
                     
 //                    LES MESSAGES D'ERREUR DU FORMULAIRE 
                     var error_all = "<p>Merci de remplir tous les champs</p>";

@@ -25,11 +25,13 @@ $(document).ready(function(){
     $('.cta').click(function(){
         $('html, body').animate({
             scrollTop: $("#anchor").offset().top}, 1000);
+//        $('html, body').stop();
     });
     
     $("#fleche").click(function(){
         $('html, body').animate({
             scrollTop: $("#anchor").offset().top},1000);
+//        $('html, body').stop();
     });
 
     $('.first').bind('mousewheel', function(e){
@@ -46,7 +48,18 @@ $(document).ready(function(){
     $("#modal-quit").click(function(){
         $("#modal-contact").fadeOut(300); 
     });
+    
+    $(window).scroll(function(){
+        stopAnim();
+    });
 });
+
+
+function stopAnim(){
+    $('html,body').bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
+    $('html, body').stop();
+  });
+}
 
 
 

@@ -20,13 +20,21 @@
         <span id="attention"></span>
         <span id="warn"></span>
 
+        <audio id="click">
+            <source src="media/mp3/click.mp3" type="audio/mpeg">
+        </audio>
+
+        <!--------------------------------------------------->
+        <!----------------------- MAIN ---------------------->
+        <!--------------------------------------------------->
         <main class="first">
             <audio id="hi">
-                <source src="media/mp3/test.mp3" type="audio/mpeg">
+                <source src="media/mp3/jingle.mp3" type="audio/mpeg">
             </audio>
-            <audio id="click">
-                <source src="media/mp3/click.mp3" type="audio/mpeg">
+            <audio id="d-1">
+                <source src="media/mp3/1.mp3" type="audio/mpeg">
             </audio>
+
             <div id="pres">
                 <img src="media/logos/logo.png" class="fade">
                 <h1 class="fade">TESTEZ DELIA</h1>
@@ -34,9 +42,15 @@
                 <a class="cta intro fade" id="test-begin"><span>Commencer</span></a>
             </div>
         </main>
-    
+
+
+        <!--------------------------------------------------->
+        <!-------------------- QUESTIONS -------------------->
+        <!--------------------------------------------------->
         <section id="quests" class="center hello">
             <div class="content">
+
+                <!--------------------- QUESTION INITIALE DEFINISSANT DES CHOIX --------------------->
                 <div class="q-in quest">
                     <label>Que recherchez-vous ?</label>
                     <select name="first" id="slct-1">
@@ -48,6 +62,7 @@
                     <input type='button' name="rep-1" class="but-rep1" value="OK">
                 </div>
 
+                <!--------------------- CHOIX 1 --------------------->
                 <div id="q-1" class="hello qn">
                     <p class="intro-qn">Pour votre occupation :</p>
                     <div id="q-1-2" class="q-2 quest hello">
@@ -106,7 +121,7 @@
                             <ul class="props l2">
                                 <li><img src="media/reps/wow.jpg"/><p>World Of Warcraft</p></li>
                                 <li><img src="media/reps/fifa.jpg"/><p>FIFA 2017</p></li>
-                                <li><img src="media/reps/goat-simulator.jpg"/><p>Goat Simulator</p></li>
+                                <li><img src="media/reps/goat-simulator.jpg"/><p>Goat Simulator (MMORPG)</p></li>
                             </ul>
                         </div>
                         <div class="props-4">
@@ -136,6 +151,7 @@
                     </div>
                 </div>
 
+                <!--------------------- CHOIX 2 --------------------->
                 <div id="q-2" class="hello qn">
                     <p class="intro-qn">Pour votre sortie :</p>
                     <div id="q-2-2" class="q-2 quest hello">
@@ -187,6 +203,7 @@
                     </div>
                 </div>
 
+                <!--------------------- CHOIX 3 --------------------->
                 <div id="q-3" class="hello qn">
                     <p class="intro-qn">Pour votre cadeau :</p>
                     <div id="q-3-2" class="q-2 quest hello">
@@ -303,6 +320,10 @@
             </div>
         </section>
 
+
+        <!--------------------------------------------------->
+        <!--------------------- MESSAGE --------------------->
+        <!--------------------------------------------------->
         <section id="message" class="center hello">
             <p class="p1">Un instant...</p>
             <p class="p2">Avez-vous vu les différents problèmes de notre IA ?</p>
@@ -311,9 +332,27 @@
             <p class="p5">Ne soyez plus dominés par vos smartphones.</p>
             <p class="p6">Reprenez le pouvoir.</p>
         </section>
-
         <div id="modal-video"><iframe src="https://www.youtube.com/embed/ch7gquxwohA" id="video" frameborder="0" allowfullscreen></iframe><span></span></div>
 
+
+        <!--------------------------------------------------->
+        <!--------------------- MESSAGE --------------------->
+        <!--------------------------------------------------->
+        <section id="end" class="center hello">
+            <p>Suivez-nous et contactez-nous :</p>
+            <ul id="social">
+                <li><a href="https://www.facebook.com/askdelia/" target="_blank"><img src="media/logos/facebook.png"></a></li>
+                <li><a href="https://twitter.com/DeliaCoach" target="_blank"><img src="media/logos/twitter.png"></a></li>
+                <li><a href="https://fr.pinterest.com/brosocomman/" target="_blank"><img src="media/logos/pinterest.png"></a></li>
+                <li><a href="https://fr.pinterest.com/brosocomman/" target="_blank"><img src="media/logos/youtube.png"></a></li>
+                <li><a ><img src="media/logos/message.png"></a></li>
+            </ul>
+            <ul id="links">
+                <a class="cta" href="/">Retour Accueil</a>
+                <a class="cta" href="test-ia.php">Refaire Test</a>
+                <a class="cta" id="if-cta">Revoir Vidéo</a>
+            </ul>
+        </section>
 
     </body>
 

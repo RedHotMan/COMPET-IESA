@@ -26,7 +26,6 @@
         
         <main class="first">
             <div class="fadein">
-                <img src="media/bg/0.jpg">
                 <img src="media/bg/1.jpg">
                 <img src="media/bg/2.jpg">
                 <img src="media/bg/3.jpg">

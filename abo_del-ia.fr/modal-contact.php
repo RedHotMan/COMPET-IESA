@@ -1,3 +1,6 @@
+<div id="shadow">
+    
+</div>
 <div id="modal-contact">
             <img id="modal-quit" src="media/logos/cross.png">
             

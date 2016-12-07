@@ -25,13 +25,11 @@ $(document).ready(function(){
     $('.cta').click(function(){
         $('html, body').animate({
             scrollTop: $("#anchor").offset().top}, 1000);
-//        $('html, body').stop();
     });
     
     $("#fleche").click(function(){
         $('html, body').animate({
             scrollTop: $("#anchor").offset().top},1000);
-//        $('html, body').stop();
     });
 
     $('.first').bind('mousewheel', function(e){
@@ -41,17 +39,21 @@ $(document).ready(function(){
     
     
 //    EVENEMENT SUR CONTACT
+    $("#shadow").on("mousewheel",function(e){
+        e.preventDefault() && e.stopImmediatePropagation();
+    });
+    
     $("#contact").click(function(){
+        $("#shadow").show();
         $("#modal-contact").fadeIn(300);
     });
     
-    $("#modal-quit").click(function(){
+    $("#shadow,#modal-quit").on("click",function(e){
+        e.preventDefault() && e.stopImmediatePropagation();
+        $("#shadow").hide();
         $("#modal-contact").fadeOut(300); 
     });
     
-    $(window).scroll(function(){
-        stopAnim();
-    });
 });
 
 

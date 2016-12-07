@@ -464,6 +464,17 @@ footer
 
 /******     CONTACT  - MODAL CONTACT  *****/
 
+#shadow
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(255,255,255,0.5);
+    display: none;
+    top: 0;
+    left: 0;
+}
+
 #contact
 {
     cursor: pointer;

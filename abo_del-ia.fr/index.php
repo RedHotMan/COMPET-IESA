@@ -23,6 +23,9 @@
 <!--        PAGE ACCUEIL - 1ERE VUE -->
         
         
+        <audio id="wlc">
+            <source src="media/mp3/jingle.mp3" type="audio/mpeg">
+        </audio>
         
         <main class="first">
             <div class="fadein">

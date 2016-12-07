@@ -5,6 +5,14 @@ $(window).load(function(){
     $('.effect').each(function(){
         $(this).addClass('active');
     })
+    
+    
+    if (window.matchMedia("(min-width: 960px)").matches) {
+        $('#wlc')[0].play();
+    } else {
+        $('audio').remove();
+    }
+
 })
 
 /**** Caroussel ****/

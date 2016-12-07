@@ -4,7 +4,7 @@
 
 /*****     GENERIQUES     *****/
 
-    @import url('font.css');
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&subset=latin-ext');
     *::selection { background: #f08934; color: #fff; }
     * { margin:0; padding:0; outline:none; list-style:none; text-decoration:none; box-sizing:border-box; background: transparent; border:none; }
     html { font-size: 10px; overflow: hidden}
@@ -23,7 +23,7 @@
     #loader:before { content: ""; position: absolute; top: 50%; left: 50%; right: 50%; width: 100px; height: 100px; border: 10px solid transparent; border-radius: 100%; border-top-color: #4e8fcc; border-right-color: #4e8fcc; border-bottom-color: #4e8fcc; animation: 1s load linear infinite; box-sizing: border-box; }
     #loader:after { content: "Veuillez patienter..."; position: absolute; top: 50%; left: 50%; right: 50%; width: 200px; height: 22px; color: #fff; font-size: 22px; text-shadow: 0 0 7px #000; text-align: center; transform: translate(-50%,-50%); }
 
-    #test-ia { background: url(../media/bg/test-ia/1.jpg) center no-repeat; background-size: cover; overflow: hidden; transition: 1s }
+    #test-ia { background: url(../media/bg/1.jpg) center no-repeat; background-size: cover; overflow: hidden; transition: 1s }
     #test-ia .content { position: absolute; transform: translateY(-50%); top: 50%; width: 100%; height: 90%;}
 
 
@@ -54,9 +54,9 @@
     main .fadein img { position: absolute; width: 100%; height: 100vh; }
     main #pres { position: absolute; transform: translate(-50%, -50%); left: 50%; right: -50%; top: 50%; max-width: 660px; width: 95%; }
     main #pres img { display: block; margin: 3.5rem auto; width: 70vw; min-width: 250px; max-width: 650px; }
-    main h1, main p { color: #fff; text-align: center; }
+    main h1, main p { color: #fff; text-align: center; text-shadow: 0 0 10px #000; }
     main h1 { margin: 1rem auto 1.4rem; width: 185px; }
-    main p { margin: 2rem 0 1rem; font-size: 2rem; }
+    main p { margin: 2rem 0 1rem; font-size: 2rem; text-transform: uppercase;  }
 
     .cta { font-size: 1.8rem; text-transform: uppercase; display: block; width:16rem; border: 3px solid #fff; text-align: center; margin: auto; padding: 1rem; cursor: pointer; background: transparent;; text-decoration: none; color: #fff; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
     .cta:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #f08934; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }

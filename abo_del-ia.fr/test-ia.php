@@ -20,6 +20,9 @@
         <span id="attention"></span>
         <span id="warn"></span>
 
+        <audio id="click">
+            <source src="media/mp3/click.mp3" type="audio/mpeg">
+        </audio>
 
         <!--------------------------------------------------->
         <!----------------------- MAIN ---------------------->
@@ -28,9 +31,10 @@
             <audio id="hi">
                 <source src="media/mp3/jingle.mp3" type="audio/mpeg">
             </audio>
-            <audio id="click">
-                <source src="media/mp3/click.mp3" type="audio/mpeg">
+            <audio id="d-1">
+                <source src="media/mp3/1.mp3" type="audio/mpeg">
             </audio>
+
             <div id="pres">
                 <img src="media/logos/logo.png" class="fade">
                 <h1 class="fade">TESTEZ DELIA</h1>
@@ -340,9 +344,10 @@
                 <li><a href="https://www.facebook.com/askdelia/" target="_blank"><img src="media/logos/facebook.png"></a></li>
                 <li><a href="https://twitter.com/DeliaCoach" target="_blank"><img src="media/logos/twitter.png"></a></li>
                 <li><a href="https://fr.pinterest.com/brosocomman/" target="_blank"><img src="media/logos/pinterest.png"></a></li>
+                <li><a href="https://fr.pinterest.com/brosocomman/" target="_blank"><img src="media/logos/youtube.png"></a></li>
                 <li><a ><img src="media/logos/message.png"></a></li>
             </ul>
-            <ul>
+            <ul id="links">
                 <a class="cta" href="/">Retour Accueil</a>
                 <a class="cta" href="test-ia.php">Refaire Test</a>
                 <a class="cta" id="if-cta">Revoir Vidéo</a>

@@ -362,7 +362,7 @@ main p
     background-color: transparent;
 }
 
-@media (max-width: 960px)
+@media (max-width: 750px)
 {
     .col-1-2 
     { 
@@ -590,19 +590,28 @@ textarea
 }
 
 
-/*
 @media (max-width:650px)
 {
     #modal-contact
     {
-        width: 500px;
-        height: 300px;
+        width: 400px;
+        height: 610px;
     }
     
     #modal-contact input, textarea
     {
         width: 100%;
     }
+    
+    #modal-form #form-prenom
+    {
+        margin-left:0;
+        width: 100%;
+    }
+    
+    #modal-form #form-nom
+    {
+        width: 100%;   
+    }
 }
-*/
 

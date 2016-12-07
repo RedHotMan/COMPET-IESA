@@ -54,26 +54,26 @@
             <div class="row">
                 <div class="col-1-2">
                     <img src="media/logos/ordi.png" >
-                    <p>Elle se préoccupe de votre bien être Delia est le coach intelligent qui vous connait, et vous apporte l’aide dont vous avez le plus besoin au quotidien. </p>
+                    <p>Delia est la 1ère application qui vous permet de gérer votre vie connectée. C’est le coach intelligent qui fait de votre bien-être sa priorité.  </p>
                 </div>
                 
                 <div class="col-1-2">
                     <img src="media/logos/smiley.png" >
-                    <p>Elle vous ressent Delia connait vos préférences, vos humeurs, vos goûts… elle vous offre une réponse adaptée à votre personnalité.</p>
+                    <p>Delia connait vos préférences, vos humeurs, vos goûts... Son offre est individualisée et fondée sur votre personnalité.</p>
                 </div>
 
                 <div class="col-1-2">
                     <img src="media/logos/cerveau.png"> 
-                    <p>Elle lit sur les lèvres, nul besoin de préciser votre demande, Delia reconnait vos mots.</p>
+                    <p>Delia sait lire en vous, ainsi que sur vos lèvres. Nul besoin de préciser vos demandes, elle reconnait vos mots ainsi que votre voix.</p>
                 </div>
                 
                 <div class="col-1-2">
                     <img src="media/logos/infini.png" >
-                    <p>Elle anticipe vos besoins Delia a une mémoire. Elle saura donc adapter vos besoins en fonction des demandes déjà effectuées, et ainsi proposer un service individualisé</p>
+                    <p>A la différence d’un humain, Delia ne vous laissera jamais tomber. Vous en avez le contrôle absolu de son activation jusqu’à sa mort.</p>
                 </div>
             </div>
-            <button class="cta_test">Tester Delia !</button>
-        </section>
+            <a class="cta_test" href="test-ia.php">Tester Delia !</a>
+        </section> 
 
     
     

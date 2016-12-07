@@ -152,12 +152,12 @@
     #end #social { width: 620px; }
     #links { width: 700px; }
     #end #social li { width:15%;  margin: 2px 2%}
-    #links li { display: inline-block; margin: 0 16px; }
+    #links li { display: inline-block; margin: 0 15px; }
 }
 
 @media (max-width: 960px) and (min-width: 480px) {
     #links, #end #social { width: 80%; }
-    #end #social li { width: 12%; margin: 20px;}
+    #end #social li { width: 12%; margin: 15px;}
     #end #links li {margin: 20px auto;}
 }
 
@@ -165,4 +165,169 @@
     #links, #end #social { width: 90%; }
     #end #social li { width: 20%; margin: 20px;}
     #end #links li {margin: 20px auto;}
+}
+
+/*** Contact ***/
+/******     CONTACT  - MODAL CONTACT  *****/
+
+#shadow
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(255,255,255,0.5);
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#contact
+{
+    cursor: pointer;
+}
+
+#modal-contact
+{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    background-color:#feae4f;
+    width: 640px;
+    height: 549px;
+    box-shadow: 0px 30px 60px -5px #000;
+}
+
+#modal-quit
+{
+    position: absolute;
+    cursor: pointer;
+    right: 18px;
+    top: 18px;
+}
+
+#modal-contact h2
+{
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+.error
+{
+    color: #c0392b;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info-form
+{
+    font-weight: bold;
+    color: #00897b;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#modal-contact input, textarea
+{
+    background-color: #fece95;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 18px;
+    height: 35px;
+    width: 100%;
+}
+
+#modal-form
+{
+    margin: 23PX 90px;
+}
+
+#modal-form #form-nom
+{
+    width: 240px;
+}
+
+#modal-form #form-prenom
+{
+    margin-left: 16px;
+    width: 201px;
+}
+
+#modal-form #form-msg
+{
+    height: 168px;
+}
+
+textarea
+{
+    height: 168px;
+    max-height: 168px;
+    max-width: 100%;
+}
+
+#modal-form #form-send
+{
+    text-transform: uppercase;
+    width: 135px;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* Modifier couleur placeholder*/
+:-moz-placeholder
+{
+    color: #fff;
+}
+
+::-moz-placeholder
+{
+    color: #fff;
+}
+
+::-webkit-input-placeholder
+{
+    color: #fff;
+}
+
+:-ms-input-placeholder
+{
+    color: #fff;
+}
+
+
+@media (max-width:650px)
+{
+    #modal-contact
+    {
+        width: 400px;
+        height: 610px;
+    }
+
+    #modal-contact input, textarea
+    {
+        width: 100%;
+    }
+
+    #modal-form #form-prenom
+    {
+        margin-left:0;
+        width: 100%;
+    }
+
+    #modal-form #form-nom
+    {
+        width: 100%;
+    }
 }

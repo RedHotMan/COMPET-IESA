@@ -74,7 +74,7 @@
                     <p>A la différence d’un humain, Delia ne vous laissera jamais tomber. Vous en avez le contrôle absolu de son activation jusqu’à sa mort.</p>
                 </div>
                 
-                <a class="cta_test" href="test-ia.php">Tester Delia !</a>
+                <a class="cta_test btn-5" href="test-ia.php">Tester Delia !</a>
             </div>
 
         </section> 
@@ -110,7 +110,8 @@
                         </li>
                         
                         <li>
-                            <img src="media/logos/youtube.png">
+                            <a href="https://www.youtube.com/channel/UCKxHH-O9aSAw7_vP9urjqOA" target="_blank"><img src="media/logos/youtube.png"> </a>
+                            
                         </li>
                     </ul>
                 </div>

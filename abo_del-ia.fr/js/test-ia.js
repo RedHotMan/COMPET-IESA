@@ -16,7 +16,8 @@ $(window).load(function(){
 
     /******* Sounds *******/
     if (window.matchMedia("(min-width: 960px)").matches) {
-        $('#test-ia main #hi')[0].play();
+        $('#hi')[0].play();
+        $('#d-1')[0].delay(4000).play();
         $('#test-ia a span, #test-ia #quests input[type="button"], .props li').click(function () {
             $('audio#click')[0].play();
         });

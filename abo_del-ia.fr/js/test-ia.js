@@ -145,7 +145,7 @@ $(document).ready(function(){
     /******* End *******/
     $('.cross').on('click', function() {
         $('#modal-video').fadeOut(500);
-        $("#video").attr('src','https://www.youtube.com/embed/q3RyAY8JvLg');
+        $("#video").attr('src','https://www.youtube.com/embed/TBl3kniA89Y');
         $('#end').removeClass('hello').delay(17000).addClass('present');
         $('#message').addClass('bye-bye').delay(17000);
     });

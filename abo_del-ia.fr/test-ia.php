@@ -361,7 +361,7 @@
                         <li><img src="media/reps/hotel.jpg"/>
                             <p>Sejour au 7ème ciel : Hotel chambre galaxy</p></li>
                         <li><img src="media/reps/anti-age.jpg"/>
-                            <p>Gampe de soin anti-age</p></li>
+                            <p>Game de soin anti-age</p></li>
                         <li><img src="media/reps/panoplie-sextoy.jpg"/>
                             <p>Sextoy (panoplie fifty shades of grades)</p></li>
                     </ul>
@@ -413,12 +413,12 @@
     <p class="p1">Avez-vous remarqué les différents problèmes de notre IA ?</p>
     <p class="p2">C'est bien normal...<br><span>DELIA est en train de dégénérer.</span></p>
     <p class="p3">Trouvez-vous cela normal de confier à une intelligence artificielle vos moindres demandes ?</p>
-    <p class="p4">N’êtes vous pas capable de gérer votre vie comme vous l’entendez par vos propres moyens ?</p>
-    <p class="p5">Faites vous confiance.</p>
+    <p class="p4">N’êtes-vous pas capable de gérer votre vie comme vous l’entendez par vos propres moyens ?</p>
+    <p class="p5">Faites-vous confiance.</p>
     <p class="p6"><a class="cta if-cta">Cliquez</a></p>
 </section>
 <div id="modal-video">
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/q3RyAY8JvLg" frameborder="0" allowfullscreen></iframe><span class="cross"></span>
+    <iframe id="video" src="https://www.youtube.com/embed/TBl3kniA89Y" frameborder="0" allowfullscreen=""></iframe><span class="cross"></span>
 </div>
 
 
